@@ -28,7 +28,7 @@ const linkAction = () =>{
     //whn we click on each nav__link, we remove the show-menu 
     navMenu.classList.remove('show-menu')
 }
-navLink.forEach(n=>n.addEventListener('clik', linkAction))
+navLink.forEach(n=>n.addEventListener('click', linkAction))
 
 
 /*=============== SHADOW HEADER ===============*/
