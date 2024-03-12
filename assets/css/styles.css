@@ -536,7 +536,7 @@ img {
 .about__perfil{
   position: relative;
   justify-self: center;
-  margin-block: 2.5rem 4.5rem;
+  margin-block: 2.5rem auto;
 }
 
 .about__image{
