@@ -120,43 +120,41 @@
 
                <div class="about__perfil">
                   <div class="about__image">
-                     <img src="assets/img/LinkedinPhoto.JPG" alt="image" class="about__img">
+                     <img src="assets/img/LinkedinPhoto.JPG" alt="" class="about__img">
 
-                     <div class="about__shadow">
-                        <div class="geometric-box"></div>
-                        <img src="assets/img/random-lines.svg" alt="" class="about__line">
-                        <div class="about__box"></div>
-                     </div>
+                     <div class="about__shadow"></div>
+
+                     <div class="geometric-box"></div>
+                     <img src="assets/img/random-lines.svg" alt="" class="about__line">
+                     <div class="about__box"></div>
                   </div>
+               </div>
 
-                  <div class="about__info">
-                     <p class="about__description">
-                        Passionate about <b>data driven insights.</b>
-                        </b> I have extensive experience with <b>test automation / processing</b> and <b>data analysis</b>
+               <div class="about__info">
+                  <p class="about__description">
+                     Passionate about <b>data driven insights.</b>
+                        </b> I have experience with <b>test automation / processing</b> and <b>data analysis</b>
                         and am looking to further my skills and experiences in <b>full-stack development</b> and <b>AI/ML</b>. 
-                     </p>
+                  </p>
 
-                     <ul class="about__list">
-                        <li class="about__item">
-
-                           <b>Languages:</b> Java, C, Python, SQL, ImageJ, XQuery, MongoDB
+                  <ul class="about__list">
+                     <li class="about__item">
+                        <b>Languages:</b> Java, C, Python, SQL, ImageJ, XQuery, MongoDB
                            <br>
                            <b>Web & App Dev:</b> HTML, CSS, JavaScript, Flask
                            <br>
                            <b>Data & Tools:</b> Matplotlib , phpMyAdmin, MySQL, PostgreSQL, Firebase, Pandas, NumPy, 
+                     </li>
+                  </ul>
 
-                        </li>
-                     </ul>
+                  <div class="about__buttons">
+                     <a href="#contact" class="button">
+                        <i class="ri-send-plane-line"></i> Contact Me
+                     </a>
 
-                     <div class="about__buttons">
-                        <a href="#contact" class="button">
-                           <i class="ri-send-plane-line"></i> Contact Me
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/bryantjchung/" target="_blank" class="button__ghost">
-                           <i class="ri-linkedin-box-line"></i>
-                        </a>
-                     </div>
+                     <a href="https://www.linkedin.com/in/bryantjchung/" target="_blank" class="button__ghost">
+                        <i class="ri-linkedin-box-line"></i>
+                     </a>
                   </div>
                </div>
             </div>
@@ -170,7 +168,7 @@
          <!--==================== PROJECTS ====================-->
          <section class="projects section" id="projects">
             <h2 class="section__title-1">
-               <span>Projects.</span>
+               <span>Projects</span>
             </h2>
 
             <div class="projects__container container grid">
@@ -185,8 +183,8 @@
                   </div>
 
                   <div class="projects__content">
-                     <h3 class="projects__subtitle"></h3>
-                     <h2 class="projects__title"></h2>
+                     <h3 class="projects__subtitle">Website</h3>
+                     <h2 class="projects__title">Mini Amazon</h2>
 
                      <class class="projects__description">
                         This was the course project for my CS 316: Introduction to Databases Course. I worked 
@@ -219,8 +217,8 @@
                   </div>
 
                   <div class="projects__content">
-                     <h3 class="Website"></h3>
-                     <h2 class="Wellness Website"></h2>
+                     <h3 class="projects__subtitle">Website</h3>
+                     <h2 class="projects__title">Wellness Website</h2>
 
                      <class class="projects__description">
                            Worked on a wellness website in a team of 4 for a Hackathon at Duke. 
@@ -253,8 +251,8 @@
                   </div>
 
                   <div class="projects__content">
-                     <h3 class="Website"></h3>
-                     <h2 class="Egg Recipe"></h2>
+                     <h3 class="projects__subtitle">Website</h3>
+                     <h2 class="projects__title">Egg Recipe</h2>
 
                      <class class="projects__description">
                            First front-end project that I did to implement self-learned knowledge of HTML, 
@@ -280,6 +278,7 @@
          </section>
 
          <!--==================== CONTACT ====================-->
+
          <section class="contact section" id="contact">
             <div class="contact__container grid">
                <div class="contact__data">
@@ -324,7 +323,7 @@
                               <label for="message" class="contact__label">Message</label>
                            </div>
 
-                           <p class="contact__message" id = "contact-message">Message sent successfully ✅</p>
+                           <p class="contact__message" id="contact-message"></p>
 
                            <button type ="submit" class="contact__button button">
                               <i class="ri-send-plane-line"></i>Send Message
@@ -360,6 +359,7 @@
             
          </section>
       </main>
+
 
       <!--==================== FOOTER ====================-->
       <footer class="footer">

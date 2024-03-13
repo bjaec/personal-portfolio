@@ -45,7 +45,7 @@ window.addEventListener('scroll', shadowscrollHeader)
 /*=============== EMAIL JS ===============*/
 
 const contactForm = document.getElementById('contact-form'),
-        contactMessage = document.getElementById('contact-message')
+      contactMessage = document.getElementById('contact-message')
 
         const sendEmail = (e) =>{
             e.preventDefault()
@@ -55,10 +55,12 @@ const contactForm = document.getElementById('contact-form'),
             .then(() =>{
                 // Show sent message
                 contactMessage.textContent = 'Message sent successfully ✅'
+                contactMessage.style.display = 'block'; // Make the message visible
 
                 // Remove message after five seconds
                 setTimeout(() =>{
                     contactMessage.textContent = ''
+                    contactMessage.style.display = 'none'; // Hide the message again
                 }, 5000)
 
                 // Clear input fields
@@ -67,12 +69,14 @@ const contactForm = document.getElementById('contact-form'),
                 }, ()=>{
                     // Show error message
                     contactMessage.textContent = 'Message not sent (service error) ❌'
+                    contactMessage.style.display = 'block'; // Make the message visible
                 })
 
 
         }
 
         contactForm.addEventListener('submit', sendEmail)
+
 /*=============== SHOW SCROLL UP ===============*/ 
 
 
